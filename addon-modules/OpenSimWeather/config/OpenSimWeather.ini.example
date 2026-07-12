@@ -1,0 +1,76 @@
+;; OpenSimWeather module configuration
+;;
+;; Copy the [Weather] section below into your OpenSim.ini (or a region
+;; config that is merged into the simulator configuration) and adjust the
+;; values as required. The module is a non-shared region module, so the
+;; settings apply to every region the simulator hosts.
+
+[Weather]
+
+	;; Master switch for the module.
+	Enabled = true
+
+	;; When true the weather can be turned off at runtime via the console/chat
+	;; commands. When false the weather system always stays active.
+	AllowDisabled = false
+
+	;; Chat channel used by the in-world weather commands.
+	CommandChannel = 89
+
+	;; When true only estate managers/owners may drive the weather commands.
+	EstateManagerOnly = true
+
+	;; Particle emitter layout. EmitterGrid is the number of emitters per axis,
+	;; EmitterHeight is the spawn height above ground in metres.
+	EmitterGrid = 8
+	EmitterHeight = 18.0
+
+	;; Global precipitation intensity multiplier (0.1 - 10).
+	Intensity = 1.0
+
+	;; Cloud / windlight handling.
+	AdjustClouds = true
+	RestoreCloudsOnClear = true
+
+	;; Wind handling. The module can drive the region wind plugin to match the
+	;; current weather and restore it when the sky clears again.
+	AdjustWind = true
+	RestoreWindOnClear = true
+	WindDirectionDegrees = 70.0
+	WindDirectionVarianceDegrees = 18.0
+	RainWindStrength = 0.45
+	StormWindStrength = 1.35
+	SnowWindStrength = 0.22
+
+	;; Avoid spawning precipitation under roofs/covered areas using ray casts.
+	AvoidCoveredAreas = true
+	CoverProbeHeight = 96.0
+
+	;; Lightning (visual flashes) during storms.
+	LightningEnabled = true
+	LightningMinDelayMS = 7000
+	LightningMaxDelayMS = 18000
+
+	;; Thunder audio that follows the lightning. ThunderSound must be the asset
+	;; UUID of a sound clip; leave empty to disable audio.
+	ThunderEnabled = true
+	ThunderVolume = 1.0
+	ThunderSound =
+
+	;; Automatic weather cycling.
+	AutoCycleEnabled = true
+	AutoCycleHours = 6.0
+	AutoCycleStartupDelaySeconds = 30
+	AutoCycleChangeOnStartup = true
+	AutoCycleChoices = storm,rain,snow,sunny,clear
+
+	;; Forecast warning broadcast before the next automatic change.
+	;; Placeholders: {RegionName} {NextWeather} {TimeUntilNextForecast}
+	AutoCycleForecastWarningMinutes = 15
+	AutoCycleForecastWarningMessage = Weather forecast update: next conditions for {RegionName} are expected to shift to {NextWeather} in {TimeUntilNextForecast}.
+
+	;; Instant message sent to avatars when they enter the region.
+	;; Placeholders: {RegionName} {Weather} {NextForecast}
+	SendWeatherIMOnEntry = true
+	WeatherIMDelaySeconds = 8
+	WeatherIMMessage = Weather forecast for {RegionName}: current conditions are {Weather}. Next forecast: {NextForecast}. Stay tuned for further regional updates.
