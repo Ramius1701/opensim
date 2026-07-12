@@ -1,0 +1,16 @@
+S:\Master\lickx\bin\Gloebit.dll
+S:\Master\lickx\bin\Gloebit.pdb
+S:\Master\lickx\addon-modules\Gloebit\GloebitMoneyModule\obj\Release\Gloebit.csproj.AssemblyReference.cache
+S:\Master\lickx\addon-modules\Gloebit\GloebitMoneyModule\obj\Release\Gloebit.GeneratedMSBuildEditorConfig.editorconfig
+S:\Master\lickx\addon-modules\Gloebit\GloebitMoneyModule\obj\Release\Gloebit.csproj.CoreCompileInputs.cache
+S:\Master\lickx\addon-modules\Gloebit\GloebitMoneyModule\obj\Release\Gloebit.csproj.Up2Date
+S:\Master\lickx\addon-modules\Gloebit\GloebitMoneyModule\obj\Release\Gloebit.dll
+S:\Master\lickx\addon-modules\Gloebit\GloebitMoneyModule\obj\Release\Gloebit.pdb
+S:\Master\Casperia\bin\Gloebit.dll
+S:\Master\Casperia\bin\Gloebit.pdb
+S:\Master\Casperia\addon-modules\Gloebit\GloebitMoneyModule\obj\Release\Gloebit.csproj.AssemblyReference.cache
+S:\Master\Casperia\addon-modules\Gloebit\GloebitMoneyModule\obj\Release\Gloebit.GeneratedMSBuildEditorConfig.editorconfig
+S:\Master\Casperia\addon-modules\Gloebit\GloebitMoneyModule\obj\Release\Gloebit.csproj.CoreCompileInputs.cache
+S:\Master\Casperia\addon-modules\Gloebit\GloebitMoneyModule\obj\Release\Gloebit.csproj.Up2Date
+S:\Master\Casperia\addon-modules\Gloebit\GloebitMoneyModule\obj\Release\Gloebit.dll
+S:\Master\Casperia\addon-modules\Gloebit\GloebitMoneyModule\obj\Release\Gloebit.pdb
